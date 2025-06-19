@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>UniTask - Chat de Equipo</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Sidebar reutilizada -->
+    <aside class="sidebar">
+      <h2>UniTask</h2>
+      <nav>
+        <ul>
+          <li><i class="fas fa-arrow-left"></i> <a href="dashboard.html" style="color:white;">Volver al Panel</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Sección de chat -->
+    <main class="main-content">
+      <header class="header">
+        <h1>Chat del Equipo</h1>
+        <p>Comunicación interna entre miembros</p>
+      </header>
+
+      <section class="chat-window" id="chatWindow"></section>
+
+      <section class="chat-input">
+        <input type="text" id="chatMessage" placeholder="Escribe un mensaje...">
+        <button onclick="sendMessage()"><i class="fas fa-paper-plane"></i></button>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/chat.js"></script>
+</body>
+</html>

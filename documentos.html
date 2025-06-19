@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>UniTask - Documentos</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>UniTask</h2>
+      <nav>
+        <ul>
+          <li><i class="fas fa-arrow-left"></i> <a href="dashboard.html" style="color:white;">Volver al Panel</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Contenido principal -->
+    <main class="main-content">
+      <header class="header">
+        <h1>Documentos Compartidos</h1>
+        <p>Simulación de subida de archivos</p>
+      </header>
+
+      <!-- Formulario para subir archivos -->
+      <section class="upload-form">
+        <input type="file" id="fileInput" multiple>
+        <button onclick="uploadFiles()">Subir Archivos</button>
+      </section>
+
+      <!-- Lista de archivos subidos -->
+      <section class="file-list" id="fileList"></section>
+    </main>
+  </div>
+
+  <script src="js/documentos.js"></script>
+</body>
+</html>
