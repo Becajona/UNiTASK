@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>UniTask - Gestión de Tareas</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Sidebar reutilizada -->
+    <aside class="sidebar">
+      <h2>UniTask</h2>
+      <nav>
+        <ul>
+          <li><i class="fas fa-arrow-left"></i> <a href="dashboard.html" style="color:white;">Volver al Panel</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Sección de tareas -->
+    <main class="main-content">
+      <header class="header">
+        <h1>Gestión de Tareas</h1>
+        <p>Agrega, visualiza y marca tus tareas</p>
+      </header>
+
+      <!-- Formulario para nueva tarea -->
+      <section class="task-form">
+        <input type="text" id="taskTitle" placeholder="Título de la tarea">
+        <select id="taskStatus">
+          <option value="Pendiente">Pendiente</option>
+          <option value="En curso">En curso</option>
+        </select>
+        <button onclick="addTask()">Agregar Tarea</button>
+      </section>
+
+      <!-- Lista de tareas -->
+      <section class="task-list" id="taskList"></section>
+    </main>
+  </div>
+
+  <script src="js/tareas.js"></script>
+</body>
+</html>
